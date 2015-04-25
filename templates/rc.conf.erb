@@ -2,16 +2,16 @@ gitbucket_enable="YES"
 <%
 args = []
 if defined? @directory
-  args.push("--gitbucket.home==#{@directory}")
+  args.push("--gitbucket.home=#{@directory}")
 end
 if defined? @http_listen
-  args.push("--host==#{@http_listen}")
+  args.push("--host=#{@http_listen}")
 end
 if defined? @http_port
-  args.push("--port==#{@http_port}")
+  args.push("--port=#{@http_port}")
 end
 if defined? @prefix
-  args.push("--prefix==#{@prefix}")
+  args.push("--prefix=#{@prefix}")
 end
 -%>
 <% if args.length > 0 -%>
